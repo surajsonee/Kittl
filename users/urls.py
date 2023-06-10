@@ -16,11 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.conf.urls import include
 from django.urls import path
-from users.views import TwitterLogin
+from rest_framework_simplejwt import views as jwt_views
 
 urlpatterns = [
     path('v1/', include('dj_rest_auth.urls')),
     path('v1/registration/', include('dj_rest_auth.registration.urls')),
-    path('dj-rest-auth/twitter/', TwitterLogin.as_view(), name='twitter_login'),
+    path('v1/token/', jwt_views.TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('v1/token/refresh/', jwt_views.TokenRefreshView.as_view(), name='token_refresh'),
     
 ]

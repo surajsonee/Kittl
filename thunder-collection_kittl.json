@@ -1,0 +1,173 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "kittl",
+    "dateExported": "2023-06-10T22:18:00.615Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "3e32e4db-e078-483b-b2fc-54ebfe307118",
+            "colId": "6141c2bf-bf5a-4d08-8912-bb5ae01273de",
+            "containerId": "",
+            "name": "register",
+            "url": "http://127.0.0.1:3000/user/v1/registration/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-06-10T21:23:02.947Z",
+            "modified": "2023-06-10T21:50:18.538Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"suraj2\",\n  \"email\":\"suraj2.weavebytes@gmail.com\",\n  \"first_name\":\"suraj\",\n  \"last_name\":\"sonee\",\n  \"password1\":\"admin@123\",\n  \"password2\":\"admin@123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "4834b05c-9e70-4626-b832-d87140638a43",
+            "colId": "6141c2bf-bf5a-4d08-8912-bb5ae01273de",
+            "containerId": "",
+            "name": "login",
+            "url": "http://127.0.0.1:3000/user/v1/login/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-06-10T21:32:12.762Z",
+            "modified": "2023-06-10T21:51:36.632Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"suraj2\",\n  \"password\":\"admin@123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "da3899b7-6b9c-45c4-b032-b2361a58b8b5",
+            "colId": "6141c2bf-bf5a-4d08-8912-bb5ae01273de",
+            "containerId": "",
+            "name": "Get token",
+            "url": "http://127.0.0.1:3000/user/v1/token/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-06-10T21:58:23.972Z",
+            "modified": "2023-06-10T22:00:59.692Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"username\": \"suraj2\",\n\"password\":\"admin@123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "63d17478-8a5a-4fe7-9fc7-ad846f315391",
+            "colId": "6141c2bf-bf5a-4d08-8912-bb5ae01273de",
+            "containerId": "",
+            "name": "Get refresh token",
+            "url": "http://127.0.0.1:3000/user/v1/token/refresh/",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-06-10T22:01:50.127Z",
+            "modified": "2023-06-10T22:03:04.322Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY4NzAzOTA3MywiaWF0IjoxNjg2NDM0MjczLCJqdGkiOiJhYzBkZGJhMDViNmE0NDVmYWE3ZjdiNDgzODdmOTY2NiIsInVzZXJfaWQiOjF9.03jZMnKzbUKQIcMN2gxxDOedU15r5OdssJoTV6NLjhs\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "edf8c221-9cc1-4e86-9fae-3c9d0bfbc70d",
+            "colId": "6141c2bf-bf5a-4d08-8912-bb5ae01273de",
+            "containerId": "",
+            "name": "Password Change",
+            "url": "http://127.0.0.1:3000/user/v1/password/change/",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-06-10T22:05:01.034Z",
+            "modified": "2023-06-10T22:10:11.353Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"new_password1\":\"Pluto@321\",\n\"new_password2\":\"Pluto@321\",\n\"old_password\": \"admin@123\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg2NjA3NzQ5LCJpYXQiOjE2ODY0MzQ5NDksImp0aSI6ImZjMWZkOWQ5NjU5MDRkMzRiNjk0ZjljYzg3MDQzYzQ5IiwidXNlcl9pZCI6MX0.91A7ebAt-VPzqEBpqMZFvCnrbxsNIX0blSnLgeovtzo"
+            },
+            "tests": []
+        },
+        {
+            "_id": "69e6d2ae-eb79-4e94-b33e-cd96e4216d45",
+            "colId": "6141c2bf-bf5a-4d08-8912-bb5ae01273de",
+            "containerId": "",
+            "name": "Get or Update user",
+            "url": "http://127.0.0.1:3000/user/v1/user/",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-06-10T22:11:13.549Z",
+            "modified": "2023-06-10T22:12:45.453Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"Suraj\",\n\"first_name\":\"suraj\",\n\"last_name\":\"sonee\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg2NjA3NzQ5LCJpYXQiOjE2ODY0MzQ5NDksImp0aSI6ImZjMWZkOWQ5NjU5MDRkMzRiNjk0ZjljYzg3MDQzYzQ5IiwidXNlcl9pZCI6MX0.91A7ebAt-VPzqEBpqMZFvCnrbxsNIX0blSnLgeovtzo"
+            },
+            "tests": []
+        },
+        {
+            "_id": "e46133d2-9e3e-4eb6-99a2-0be4d23026a9",
+            "colId": "6141c2bf-bf5a-4d08-8912-bb5ae01273de",
+            "containerId": "",
+            "name": "password reset",
+            "url": "http://127.0.0.1:3000/user/v1/password/reset/",
+            "method": "POST",
+            "sortNum": 80000,
+            "created": "2023-06-10T22:13:18.866Z",
+            "modified": "2023-06-10T22:14:37.922Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\":\"suraj1.weavebytes@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c645c707-7710-4710-867e-8643497acd12",
+            "colId": "6141c2bf-bf5a-4d08-8912-bb5ae01273de",
+            "containerId": "",
+            "name": "password reset confirm",
+            "url": "http://127.0.0.1:3000/user/v1/password/reset/confirm/",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-06-10T22:15:29.847Z",
+            "modified": "2023-06-10T22:17:07.179Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"uid\": \"\",\n  \"token\": \"\",\n  \"new_password1\": \"\",\n  \"new_password2\": \"\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjg2NjA3NzQ5LCJpYXQiOjE2ODY0MzQ5NDksImp0aSI6ImZjMWZkOWQ5NjU5MDRkMzRiNjk0ZjljYzg3MDQzYzQ5IiwidXNlcl9pZCI6MX0.91A7ebAt-VPzqEBpqMZFvCnrbxsNIX0blSnLgeovtzo"
+            },
+            "tests": []
+        }
+    ]
+}
